@@ -1,0 +1,5 @@
+npm create vite@latest
+npm i
+
+public 폴더
+사진, 아이콘, 폰트, 동영상 같은 코드가 아닌 정적인 파일들을 보관

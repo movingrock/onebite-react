@@ -1,0 +1,33 @@
+Node.js
+자바스크립트 실행 환경 (Runtime) (구동기)
+
+필요한 이유?
+웹 서버, 모바일 앱, 데스크톱 앱을 만들 수 있도록
+
+
+패키지 (Package) Node.js에서 사용하는 프로그램의 단위
+=
+프로젝트(Project)
+
+모듈 시스템
+모듈이란?
+모듈을 생성하고, 불러오고, 사용하는 등의 모듈을 다루는 다양한 기능을 제공하는 시스템
+(ex) Common js, Es Module, AMD, UMD
+기능별로 파일을 나눠서 제작
+
+user.js, cart.js payment.js
+user 모듈 cart 모듈 payment 모듈
+
+commonJS
+require 사용
+module.exports = {
+  add,
+  sub,
+};
+const moduleData = require("./math");
+
+
+
+esmodule
+pakage.json에
+  "type": "module" 추가

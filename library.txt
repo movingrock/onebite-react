@@ -1,0 +1,16 @@
+라이브러리란?
+프로그램을 개발할 때 필요한 다양한 기능들을 미리 만들어 모듈화 해 놓은것
+
+
+node_modules
+다운받은 라이브러리의 저장소
+
+
+package-lock.json
+라이브러리의 버전이나 정보를 package.json보다 더 정확하고 엄밀하게 저장하는 파일.
+"randomcolor": "^0.6.2"  ^대략적인 버전 표시
+
+
+npm i 라고 하면
+package.json의 dependencies의 정보를 기준으로 모든 패키지, 라이브러리를 다시 설치해줌.
+node_modules는 공유할 필요가 없음. package.json에 정보가 담겨 있기 때문.
