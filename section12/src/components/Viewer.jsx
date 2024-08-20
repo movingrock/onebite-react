@@ -2,6 +2,9 @@ import EmotionItem from "./EmotionItem";
 import { DiaryStateContext } from "../App";
 import { useContext, useEffect, useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
+import { getEmotionImage } from "../util/get-emotion-image";
+import { emotionList } from "../util/constants";
+import "./Viewer.css";
 
 const Viewer = ({ initData }) => {
   const params = useParams();
@@ -23,15 +26,22 @@ const Viewer = ({ initData }) => {
     }
   }, [initData]);
 
+  const emotionItem = emotionList.find((item) => String(item.emotionId) === String(input.emotionId));
+
   return (
-    <div>
-      <section>
+    <div className="Viewer">
+      <section className="img_section">
         <h4>오늘의 감정</h4>
-        <EmotionItem emotionId={input.emotionId} />
+        <div className={`emotion_img_wrapper emotion_img_wrapper_${input.emotionId}`}>
+          <img src={getEmotionImage(input.emotionId)} />
+          <div>{emotionItem.emotionName}</div>
+        </div>
       </section>
-      <section>
+      <section className="content_section">
         <h4>오늘의 일기</h4>
-        <div>{input.content}</div>
+        <div className="content_wrapper">
+          <p>{input.content}</p>
+        </div>
       </section>
     </div>
   );
