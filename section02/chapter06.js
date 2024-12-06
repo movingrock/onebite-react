@@ -9,7 +9,7 @@ for (let i = 0; i < arr.length; i++) {
   console.log(arr[i]);
 }
 
-// 1.2 for of 반복문
+// 1.2 for of 반복문  (배열에서 사용)
 for (let item of arr) {
   console.log(item);
 }
@@ -43,7 +43,7 @@ for (let value of values) {
   console.log(value);
 }
 
-// 2.3 for in
+// 2.3 for in (객체에서 사용)
 for (let key in person) {
   const value = person[key];
   console.log(key, value);
