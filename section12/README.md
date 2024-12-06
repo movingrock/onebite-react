@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-# 감정일기장 프로젝트
-
-### 배포사이트
-
-https://emotion-diary-flax-two.vercel.app/
-=======
 # 배포(vercel)
 
 [https://emotion-diary-flax-two.vercel.app/](https://emotion-diary-flax-two.vercel.app/)
@@ -73,4 +66,5 @@ section12
 ```
 
 # Pages
->>>>>>> f6131406091f569db49249cb0487597e40b5df28
+
+> > > > > > > f6131406091f569db49249cb0487597e40b5df28
