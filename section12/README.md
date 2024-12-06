@@ -1,8 +1,68 @@
-# React + Vite
+# 배포(vercel)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[https://emotion-diary-flax-two.vercel.app/](https://emotion-diary-flax-two.vercel.app/)
 
-Currently, two official plugins are available:
+# 프로젝트 설명
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [인프런 한입리액트](https://www.inflearn.com/course/%ED%95%9C%EC%9E%85-%EB%A6%AC%EC%95%A1%ED%8A%B8) 강의 프로젝트
+- `React`, `Javascript`, `vercel`
+- 일기를 작성하고 그날의 기분을 선택하여 월별로 정리해서 볼 수 있음.
+
+# 파일 구성
+
+```
+section12
+├─ .eslintrc.cjs
+├─ .gitignore
+├─ index.html
+├─ package-lock.json
+├─ package.json
+├─ public
+│  ├─ favicon.ico
+│  ├─ NanumPenScript-Regular.ttf
+│  └─ thumbnail.png
+├─ README.md
+├─ src
+│  ├─ App.css
+│  ├─ App.jsx
+│  ├─ assets
+│  │  ├─ emotion1.png
+│  │  ├─ emotion2.png
+│  │  ├─ emotion3.png
+│  │  ├─ emotion4.png
+│  │  └─ emotion5.png
+│  ├─ components
+│  │  ├─ Button.css
+│  │  ├─ Button.jsx
+│  │  ├─ DiaryItem.css
+│  │  ├─ DiaryItem.jsx
+│  │  ├─ DiaryList.css
+│  │  ├─ DiaryList.jsx
+│  │  ├─ Editor.css
+│  │  ├─ Editor.jsx
+│  │  ├─ EmotionItem.css
+│  │  ├─ EmotionItem.jsx
+│  │  ├─ Header.css
+│  │  ├─ Header.jsx
+│  │  ├─ Viewer.css
+│  │  └─ Viewer.jsx
+│  ├─ hooks
+│  │  ├─ useDiary.jsx
+│  │  └─ usePageTitle.jsx
+│  ├─ index.css
+│  ├─ main.jsx
+│  ├─ pages
+│  │  ├─ Diary.jsx
+│  │  ├─ Edit.jsx
+│  │  ├─ Home.jsx
+│  │  ├─ New.jsx
+│  │  └─ Notfound.jsx
+│  └─ util
+│     ├─ constants.js
+│     ├─ get-emotion-image.js
+│     └─ get-stringed-date.js
+└─ vite.config.js
+
+```
+
+# Pages
